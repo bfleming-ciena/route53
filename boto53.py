@@ -1,33 +1,5 @@
 #!/usr/bin/env python
 
- #**************************************************************************
-# Copyright (C) 2006-2013 by Cyan Optics Inc.
-# All rights reserved.
-#                   _____
-#                 /\   _ \
-#                 \ \ \/\_\  __  __     __      ___
-#                  \ \ \/_/_/\ \/\ \  / __`\  /   _`\
-#                   \ \ \/\ \ \ \_\ \/\ \/\.\_/\ \/\ \
-#                    \ \____/\/`____ \ \__/.\_\ \_\ \_\
-#                     \/___/  `/___/> \/__/\/_/\/_/\/_/
-#                                /\___/
-#                                \/__/
-#                   _____          __
-#                 /\  __ \        /\ \__  __
-#                 \ \ \/\ \  _____\ \  _\/\_\     ___   ____
-#                  \ \ \ \ \/\  __`\ \ \/\/\ \  / ___\ /  __\
-#                   \ \ \_\ \ \ \/\ \ \ \_\ \ \/\ \__//\__\
-#                    \ \_____\ \ ,__/\ \__\\ \_\ \____\/\____/
-#                     \/_____/\ \ \/  \/__/ \/_/\/____/\/___/
-#                              \ \_\
-#                               \/_/
-# PROPRIETARY NOTICE
-# This Software consists of confidential information.
-# Trade secret law and copyright law protect this Software.
-# The above notice of copyright on this Software does not indicate
-# any actual or intended publication of such Software.
-#
-#**************************************************************************/
 
 # NOTE FOR SETTING UP CREDENTIALS:
 #
@@ -63,7 +35,7 @@ from optparse import OptionParser, OptionGroup
 # boto.config.set('Credentials', 'aws_secret_access_key', 'YOURS GOES HERE')
 
 # route53 zone
-zone_id = "Z2KSRKJN5W6A4A"
+zone_id = "YOURS HERE"
 region = "us-east-1"
 ttl = 300
 def add_route53_record(name, ip_address=None):
